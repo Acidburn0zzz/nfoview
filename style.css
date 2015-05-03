@@ -1,1 +1,104 @@
 /* -*- coding: utf-8-unix -*- */
+
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono:400);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: #2e3436;
+  font-family: Karla,sans-serif;
+  font-size: 15px;
+  line-height: 1.666667em;
+  text-align: center;
+}
+
+a {
+  color: #3465a4;
+}
+
+button, .btn, .nav-pills li a {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #729fcf;
+  border-color: #3465a4;
+  box-shadow: 0px 0px 2px #204a87;
+  color: white;
+  text-shadow: 1px 1px 4px #204a87;
+}
+
+.btn-primary:hover {
+  background-color: #3465a4;
+}
+
+code {
+  font-family: "Droid Sans Mono",monospace;
+  font-size: 0.866667em;
+}
+
+p {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+#header {
+  background: url(header.png) no-repeat center center;
+  height: 50px;
+  margin: 2em 0;
+  text-align: center;
+  width: 100%;
+}
+
+#container {
+  padding: 0 2em 2em 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 99%;
+  text-align: left;
+  width: 62em;
+}
+
+#screenshot {
+  float: left;
+  /* img.height + 12 + 12 */
+  height: 361px;
+}
+
+#screenshot img {
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+}
+
+#overview {
+  /* img.width + 24 */
+  margin-left: 281px;
+}
+
+#footer .center-pills {
+  display: inline-block;
+}
+
+#footer .nav li a {
+  padding: 4px 12px;
+}
+
+/* img.width * 2 + 24 + 24 + 24 */
+@media (max-width: 586px) {
+  #header {
+    background: url(header.png) no-repeat left center;
+  }
+  #screenshot {
+    text-align: center;
+    width: 100%;
+  }
+  #overview {
+    float: left;
+    margin-left: 0;
+  }
+}
