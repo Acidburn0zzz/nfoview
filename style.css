@@ -27,15 +27,25 @@ button, .btn, .nav-pills li a {
 }
 
 .btn-primary {
-  background-color: #729fcf;
-  border-color: #3465a4;
-  box-shadow: 0px 0px 2px #204a87;
+  background-color: #4a90d9;
+  border-bottom: 1px solid rgba(28,81,135,0.5);
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 0 0 1px #1c5187;
   color: white;
-  text-shadow: 1px 1px 4px #204a87;
+  text-shadow: 0 -1px rgba(0,0,0,0.5);
 }
 
 .btn-primary:hover {
-  background-color: #3465a4;
+  background-color: #5b9add;
+  border-bottom: 1px solid rgba(28,81,135,0.5);
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 0 0 1px #1c5187;
+  color: white;
+  text-shadow: 0 -1px rgba(0,0,0,0.5);
 }
 
 code {
