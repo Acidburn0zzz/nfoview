@@ -8,49 +8,44 @@
   padding: 0;
 }
 
+html {
+  font-family: Karla,sans-serif;
+  font-size: 16px;
+}
+
 body {
   background-color: white;
   color: #2e3436;
   font-family: Karla,sans-serif;
   font-size: 16px;
   line-height: 1.625em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 99%;
+  padding: 2rem;
   text-align: center;
+  text-align: left;
+  width: 52rem;
 }
 
 a {
   color: #3465a4;
+  text-decoration: none;
 }
 
-button, .btn, .nav-pills li a {
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+a:hover {
+  border-bottom: 1px solid #3465a4;
+  color: #3465a4;
+  text-decoration: none;
 }
 
-.btn-primary {
-  background-color: #4a90d9;
-  border-bottom: 1px solid rgba(28,81,135,0.5);
-  border-left: none;
-  border-right: none;
-  border-top: 1px solid rgba(255,255,255,0.5);
-  box-shadow: 0 0 0 1px #1c5187;
-  color: white;
-  text-shadow: 0 -1px rgba(0,0,0,0.5);
-}
-
-.btn-primary:hover {
-  background-color: #5b9add;
-  border-bottom: 1px solid rgba(28,81,135,0.5);
-  border-left: none;
-  border-right: none;
-  border-top: 1px solid rgba(255,255,255,0.5);
-  box-shadow: 0 0 0 1px #1c5187;
-  color: white;
-  text-shadow: 0 -1px rgba(0,0,0,0.5);
+a[role="button"]:hover {
+  border-bottom: none;
 }
 
 code {
   font-family: "Droid Sans Mono",monospace;
-  font-size: 0.866667em;
+  font-size: 14px;
 }
 
 p {
@@ -58,21 +53,12 @@ p {
   text-align: left;
 }
 
-#header {
+header {
   background: url(header.png) no-repeat center center;
   height: 50px;
-  margin: 2em 0;
+  margin-bottom: 2rem;
   text-align: center;
   width: 100%;
-}
-
-#container {
-  padding: 0 2em 2em 2em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 99%;
-  text-align: left;
-  width: 52em;
 }
 
 #screenshot {
@@ -90,17 +76,16 @@ p {
   margin-left: 281px;
 }
 
-#footer .center-pills {
-  display: inline-block;
-}
-
-#footer .nav li a {
-  padding: 4px 12px;
+footer {
+  color: #888a85;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* img.width * 2 + 24 + 24 + 24 */
 @media (max-width: 586px) {
-  #header {
+  header {
     background: url(header.png) no-repeat left center;
   }
   #screenshot {

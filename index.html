@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A simple viewer for NFO files, mainly targeted for Unix-like systems (GNU/Linux, *BSD, Solaris, etc).">
     <title>NFO Viewer</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="header"></div>
-    <div id="container">
-      <div id="screenshot">
+    <header></header>
+    <main>
+      <aside id="screenshot">
         <a href="https://dl.dropboxusercontent.com/u/39625783/nfoview-1.png">
-          <img src="https://dl.dropboxusercontent.com/u/39625783/nfoview-1s.png"
-               width="257"
-               height="337">
+          <img src="https://dl.dropboxusercontent.com/u/39625783/nfoview-1s.png" width="257" height="337">
         </a>
-      </div>
+      </aside>
       <div id="overview">
         <p>
           NFO Viewer is a simple viewer for <a href="http://en.wikipedia.org/wiki/.nfo">
@@ -45,23 +44,21 @@
           is <code>1.16</code> (<a href="https://github.com/otsaloma/nfoview/releases">changes</a>).
         </p>
         <p>
-          <a href="https://github.com/otsaloma/nfoview/archive/1.16.tar.gz"
-             class="btn btn-primary"
-             role="button">
+          <a href="https://github.com/otsaloma/nfoview/archive/1.16.tar.gz" class="btn btn-primary" role="button">
             <b>Download 1.16</b>
           </a>
         </p>
       </div>
-      <div class="clearfix"></div>
-      <div id="footer" class="text-center">
-        <ul class="nav nav-pills center-pills">
-          <li><a href="https://github.com/otsaloma/nfoview">Code</a></li>
-          <li><a href="https://bugzilla.gnome.org/browse.cgi?product=nfoview">Bugs</a></li>
-          <li><a href="https://gitter.im/otsaloma/nfoview">Discuss</a></li>
-          <li><a href="https://www.transifex.com/projects/p/nfoview/">Translations</a></li>
-        </ul>
-      </div>
-    </div>
+    </main>
+    <div class="clearfix"></div>
+    <footer>
+      NFO Viewer &copy; 2005–2015 Osmo Salomaa
+      &middot; <a href="https://github.com/otsaloma/nfoview">Code</a>
+      &middot; <a href="https://bugzilla.gnome.org/browse.cgi?product=nfoview">Bugs</a>
+      &middot; <a href="https://gitter.im/otsaloma/nfoview">Discuss</a>
+      &middot; <a href="https://www.transifex.com/projects/p/nfoview/">Translations</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
