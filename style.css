@@ -71,6 +71,15 @@ header {
   box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
 }
 
+.featherlight-content {
+  background: none !important;
+}
+
+.featherlight-close-icon {
+  background: none !important;
+  color: white !important;
+}
+
 #overview {
   /* img.width + 24 */
   margin-left: 281px;
