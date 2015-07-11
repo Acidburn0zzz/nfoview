@@ -73,11 +73,16 @@ header {
 
 .featherlight-content {
   background: none !important;
+  border: none !important;
+  padding: 0 40px !important;
 }
 
 .featherlight-close-icon {
   background: none !important;
   color: white !important;
+  font-size: 28px !important;
+  line-height: 28px !important;
+  width: 28px !important;
 }
 
 #overview {
