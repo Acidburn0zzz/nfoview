@@ -3,11 +3,6 @@
 @import url(http://fonts.googleapis.com/css?family=Karla:400,700);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono:400);
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   font-family: Karla,sans-serif;
   font-size: 16px;
@@ -15,10 +10,10 @@ html {
 
 body {
   background-color: white;
-  color: #2e3436;
+  color: #404444;
   font-family: Karla,sans-serif;
   font-size: 16px;
-  line-height: 1.625em;
+  line-height: 26px;
   margin-left: auto;
   margin-right: auto;
   max-width: 99%;
@@ -39,16 +34,18 @@ a:hover {
   text-decoration: none;
 }
 
-a[role="button"]:hover {
-  border-bottom: none;
+.btn {
+  border-radius: 16px !important;
+  border: none !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
 }
 
-.btn {
+.btn:active,
+.btn:focus {
+  /* Use background colors instead of normal browser hints. */
   border: none !important;
-  border-radius: 15px !important;
-  font-size: 15px !important;
-  font-weight: bold !important;
-  letter-spacing: 1px !important;
+  outline: none !important;
 }
 
 .btn-primary {
@@ -56,27 +53,16 @@ a[role="button"]:hover {
   color: white !important;
 }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
   background-color: #5b9add !important;
+  color: white !important;
 }
 
 code {
   font-family: "Droid Sans Mono",monospace;
   font-size: 14px;
-}
-
-.featherlight-content {
-  background: none !important;
-  border: none !important;
-  padding: 0 40px !important;
-}
-
-.featherlight-close-icon {
-  background: none !important;
-  color: white !important;
-  font-size: 28px !important;
-  line-height: 28px !important;
-  width: 28px !important;
 }
 
 p {
@@ -92,6 +78,12 @@ header {
   width: 100%;
 }
 
+@media (max-width: 586px) {
+  header {
+    background: url(header.png) no-repeat left center;
+  }
+}
+
 header {
   /* http://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering */
   image-rendering: -moz-crisp-edges;
@@ -101,35 +93,38 @@ header {
 
 #screenshot {
   float: left;
-  /* img.height + 12 + 12 */
+  /* img.height+12+12 */
   height: 361px;
+}
+
+@media (max-width: 586px) {
+  #screenshot {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 #screenshot img {
   box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
 }
 
+.lb-outerContainer {
+  background-color: transparent;
+}
+
 #overview {
-  /* img.width + 24 */
+  /* img.width+24 */
   margin-left: 281px;
+}
+
+@media (max-width: 586px) {
+  #overview {
+    float: left;
+    margin-left: 0;
+  }
 }
 
 footer {
   color: #888a85;
   text-align: center;
-}
-
-/* img.width * 2 + 24 + 24 + 24 */
-@media (max-width: 586px) {
-  header {
-    background: url(header.png) no-repeat left center;
-  }
-  #screenshot {
-    text-align: center;
-    width: 100%;
-  }
-  #overview {
-    float: left;
-    margin-left: 0;
-  }
 }
