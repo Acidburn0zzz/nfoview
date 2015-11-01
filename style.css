@@ -18,7 +18,6 @@ body {
   margin-right: auto;
   max-width: 99%;
   padding: 2rem;
-  text-align: center;
   text-align: left;
   width: 52rem;
 }
@@ -41,11 +40,16 @@ a:hover {
   font-weight: bold !important;
 }
 
-.btn:active,
-.btn:focus {
+.btn:active, .btn:focus {
   /* Use background colors instead of normal browser hints. */
   border: none !important;
   outline: none !important;
+}
+
+.btn-lg {
+  border: none !important;
+  border-radius: 21px !important;
+  font-weight: 600 !important;
 }
 
 .btn-primary {
@@ -53,9 +57,7 @@ a:hover {
   color: white !important;
 }
 
-.btn-primary:active,
-.btn-primary:focus,
-.btn-primary:hover {
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #5b9add !important;
   color: white !important;
 }
@@ -93,7 +95,7 @@ header {
 
 #screenshot {
   float: left;
-  /* img.height+12+12 */
+  /* img.height + 12 + 12 */
   height: 361px;
 }
 
@@ -112,19 +114,18 @@ header {
   background-color: transparent;
 }
 
-#overview {
-  /* img.width+24 */
+#main {
+  /* img.width + 24 */
   margin-left: 281px;
 }
 
 @media (max-width: 586px) {
-  #overview {
+  #main {
     float: left;
     margin-left: 0;
   }
 }
 
-footer {
+.footer {
   color: #888a85;
-  text-align: center;
 }
