@@ -80,7 +80,7 @@ header {
   width: 100%;
 }
 
-@media (max-width: 586px) {
+@media (max-width: 630px) {
   header {
     background: url(header.png) no-repeat left center;
   }
@@ -100,7 +100,7 @@ header {
   margin-top: 9px;
 }
 
-@media (max-width: 586px) {
+@media (max-width: 630px) {
   #screenshot {
     text-align: center;
     width: 100%;
@@ -120,7 +120,7 @@ header {
   margin-left: 293px;
 }
 
-@media (max-width: 586px) {
+@media (max-width: 630px) {
   #main {
     float: left;
     margin-left: 0;
