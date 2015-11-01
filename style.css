@@ -1,7 +1,7 @@
 /* -*- coding: utf-8-unix -*- */
 
-@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono:400);
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
 
 html {
   font-family: Karla,sans-serif;
@@ -40,16 +40,16 @@ a:hover {
   font-weight: bold !important;
 }
 
+.btn-lg {
+  border-radius: 21px !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+
 .btn:active, .btn:focus {
   /* Use background colors instead of normal browser hints. */
   border: none !important;
   outline: none !important;
-}
-
-.btn-lg {
-  border: none !important;
-  border-radius: 21px !important;
-  font-weight: 600 !important;
 }
 
 .btn-primary {
@@ -97,6 +97,7 @@ header {
   float: left;
   /* img.height + 12 + 12 */
   height: 361px;
+  margin-top: 9px;
 }
 
 @media (max-width: 586px) {
@@ -115,8 +116,8 @@ header {
 }
 
 #main {
-  /* img.width + 24 */
-  margin-left: 281px;
+  /* img.width + 36 */
+  margin-left: 293px;
 }
 
 @media (max-width: 586px) {
